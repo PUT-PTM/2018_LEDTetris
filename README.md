@@ -12,6 +12,15 @@ Two merged matrices give us 128 diodes. We are using MAX7219 Driver which allows
 
 - 8x8 LED Matrix Specification
 
+| Name | Value |
+| :---: | :---: | 
+| Operating Voltage | DC 4.7V~5.3V |
+| Operating Current | 320mA |
+| Max Operating Current | 2A |
+| LED Color | Red |
+| Resistor | 10kΩ |
+| Ceramic capacitor | 100 nF / 25 V |
+| Electrolytic capacitor | 10 uF / 25 V |
 
 
 # 4. Tools 🔧
@@ -25,13 +34,42 @@ Two merged matrices give us 128 diodes. We are using MAX7219 Driver which allows
 
 Run program in System Workbench C/C++ Developers for STM32 and connect wires as follows
 
+STM32F4DISCOVERY
+
+| STM32F4DISCOVERY | Push Buttons |
+| :---: | :---: | 
+| GND | G |
+| PE11 | K0 |
+| PE12 | K5 |
+| PE13 | K4 |
+| PE14 | K1 |
 
 
+| STM32F4DISCOVERY | Matrix 1# |
+| :---: | :---: | 
+| 5V | VCC |
+| GND | GND |
+| PA5 | CLK |
+| PA7 | DIN |
+| PC5 | CS |
+
+
+| Matrix 1# | Matrix 2# |
+| :---: | :---: | 
+| VCC | VCC |
+| GND | GND |
+| CLK | CLK |
+| DIN | DIN |
+| CS | CS |
 
 
 # 6. How to compile ⚡️
 
+Run program in System Workbench Developers C/C++ for STM32.
+
 # 7. Future improvements 🔨
+
+Add another two matrices creating a display with 256 LED diodes.
 
 # 8. Attributions 💾
 
@@ -41,4 +79,9 @@ HAL library https://github.com/petoknm/MAX7219/
 
 MIT license. Read license.txt for more.
 
-# 10. Cre
+# 10. Credits 🏆
+
+- Kamil Rogowski
+- Patryk Romaniak
+
+The project was conducted during the Microprocessor Lab course held by the Institute of Control and Information Engineering, Poznan University of Technology. Supervisor: Adam Bondyra.
