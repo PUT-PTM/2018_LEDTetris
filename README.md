@@ -59,7 +59,7 @@ STM32F4DISCOVERY
 | VCC | VCC |
 | GND | GND |
 | CLK | CLK |
-| DIN | DIN |
+| DOUT | DIN |
 | CS | CS |
 
 
